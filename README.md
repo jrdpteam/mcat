@@ -8,8 +8,8 @@ A simple, lightweight, and portable *mini `cat`* written in C++. Reads files (or
 
 * Supports multiple files as arguments.
 * `"-"` represents `stdin` (UNIX convention).
-* Opens files in binary mode (`rb`) — works well on Windows and *nix.
 * Minimal dependencies, simple and readable code.
+* Works like cat.
 
 ---
 
@@ -37,9 +37,8 @@ clang++ -O2 -std=c++11 mcat.cpp -o mcat
 # Read from stdin (no arguments)
 ./mcat < file.txt
 
-# Using '-' for stdin explicitly
-./mcat - otherfile.txt
-
 # Pipeline example
 ./mcat big_logs.log | head -n 5
 ```
+
+by JRDP Team
